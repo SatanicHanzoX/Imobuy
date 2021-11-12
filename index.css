@@ -17,7 +17,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .headerbox {
-  background: #ffc400;
+  background: #ffbb00;
   padding: 10px 0;
 }
 
@@ -95,7 +95,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .searchbox:focus-within {
-  outline: 3px solid #ffc400;
+  outline: 3px solid #ffbb00;
 }
 
 .search {
@@ -148,7 +148,7 @@ a, a:visited, a:hover, a:active {
 
 .sumbitform {
   border: 0;
-  background: #ffc400;
+  background: #ffbb00;
   padding: 15px;
   width: 100%;
   cursor: pointer;
