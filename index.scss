@@ -1,3 +1,13 @@
+:root {
+    --h1-font:clamp(2rem, 3vw, 3rem);
+    --h2-font:clamp(1.5rem, 1.5vw, 2rem);
+    --h3-font:clamp(1.2rem, 1.4vw, 1.8rem);
+    --h4-font:clamp(1.0rem, 1.1vw, 1.5rem);
+    --h5-font:clamp(1rem, 0.9vw, 1.3rem);
+    --p-font:clamp(1.1rem, 1.5vw, 1.2rem);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +53,15 @@ a, a:visited, a:hover, a:active {
     }
   }
 
+  .loginsvg {
+    transition: ease-in 0.35s;
+  }
+
+  .loginsvg:hover {
+      scale: 1.1;
+
+  }
+
   .bigcontainer {
       background: url(./img/pexels-aleksejs-bergmanis-681368.png);
       background-repeat: no-repeat;
@@ -73,7 +92,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .title {
-    font-size: clamp(2rem, 3vw, 3rem);
+    font-size: var(--h1-font);
 }
 
 .searchbox {
@@ -109,12 +128,7 @@ a, a:visited, a:hover, a:active {
   
 }
 
-.Filters {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .dropdowns {
     background-color: rgb(219, 219, 219);
@@ -132,6 +146,7 @@ a, a:visited, a:hover, a:active {
 
 .subtitle {
     margin:20px 0;
+    font-size:var(--h4-font);
   
 }
 
@@ -202,14 +217,23 @@ width: 80vw;
     cursor: pointer;
    gap: 30px;
    border-radius: 5px;
+   transition: ease-in 0.2s;
+   
+
+}
+
+.card:hover {
+
+    transform: scale(1.07);
+    
 }
 
 .TitleBox {
-    font-size:clamp(1.5rem, 1.5vw, 2rem) ;
+    font-size:var(--h3-font) ;
 }
 
 .para {
-    font-size:clamp(1.1rem, 1.5vw, 1.2rem)
+    font-size:var(--p-font);
 }
 
 .footer {
@@ -223,7 +247,7 @@ width: 80vw;
 }
 
 .footertitle {
-    font-size: 30px;
+    font-size:var(--h-font);
     color: white;
     text-align: center;
     padding: 40px;
@@ -276,7 +300,17 @@ width: 80vw;
     }
 }
 
+@media screen and (max-width: 950px) {
+    .searchicon {
+        width: 50px;
+        height: 50px;
+    }
 
+    .search {
+        
+        height: 50px;
+    }
+}
 
 @media screen and (max-width: 750px) {
 
@@ -319,9 +353,32 @@ width: 80vw;
 
 }
 
+@media screen and (max-width: 550px) {
+    .Filters {
+        width: 100%;
+        display: block;
+        margin: auto;
+        
+    
+    }
+
+    .dropdowns {
+       width:130px;
+       
+       
+    }
+}
+
 @media screen and (max-width: 500px) {
     .card {
         width: 2000px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .dropdowns {
+        width: max-content;
     }
 }
 

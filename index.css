@@ -1,3 +1,12 @@
+:root {
+  --h1-font:clamp(2rem, 3vw, 3rem);
+  --h2-font:clamp(1.5rem, 1.5vw, 2rem);
+  --h3-font:clamp(1.2rem, 1.4vw, 1.8rem);
+  --h4-font:clamp(1.0rem, 1.1vw, 1.5rem);
+  --h5-font:clamp(1rem, 0.9vw, 1.3rem);
+  --p-font:clamp(1.1rem, 1.5vw, 1.2rem);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +53,15 @@ a, a:visited, a:hover, a:active {
   max-height: 100%;
 }
 
+.loginsvg {
+  -webkit-transition: ease-in 0.35s;
+  transition: ease-in 0.35s;
+}
+
+.loginsvg:hover {
+  scale: 1.1;
+}
+
 .bigcontainer {
   background: url(./img/pexels-aleksejs-bergmanis-681368.png);
   background-repeat: no-repeat;
@@ -78,7 +96,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .title {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: var(--h1-font);
 }
 
 .searchbox {
@@ -117,20 +135,6 @@ a, a:visited, a:hover, a:active {
   border: 0px;
 }
 
-.Filters {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .dropdowns {
   background-color: #dbdbdb;
   border: 0;
@@ -144,6 +148,7 @@ a, a:visited, a:hover, a:active {
 
 .subtitle {
   margin: 20px 0;
+  font-size: var(--h4-font);
 }
 
 .sumbitform {
@@ -226,14 +231,21 @@ a, a:visited, a:hover, a:active {
   cursor: pointer;
   gap: 30px;
   border-radius: 5px;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 .TitleBox {
-  font-size: clamp(1.5rem, 1.5vw, 2rem);
+  font-size: var(--h3-font);
 }
 
 .para {
-  font-size: clamp(1.1rem, 1.5vw, 1.2rem);
+  font-size: var(--p-font);
 }
 
 .footer {
@@ -244,7 +256,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .footertitle {
-  font-size: 30px;
+  font-size: var(--h-font);
   color: white;
   text-align: center;
   padding: 40px;
@@ -303,6 +315,16 @@ a, a:visited, a:hover, a:active {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .searchicon {
+    width: 50px;
+    height: 50px;
+  }
+  .search {
+    height: 50px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .footer {
     height: -webkit-fit-content;
@@ -353,9 +375,28 @@ a, a:visited, a:hover, a:active {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .Filters {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .dropdowns {
+    width: 130px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .card {
     width: 2000px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dropdowns {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 }
 /*# sourceMappingURL=index.css.map */
