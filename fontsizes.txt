@@ -1,0 +1,7 @@
+title 48
+subtitle 18
+boxtitle 29
+paragraph 19
+footer 30
+listtitle 19
+list 16

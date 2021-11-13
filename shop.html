@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imobuy</title>
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="headerbox">
+    <div class="headercontent">
+      <div class="imgdiv">
+        <a class="loginlink" href="index.html"><img src="./img/Logo.png" alt="" /></a>
+      </div>
+      <div class="loginsvg">
+        <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+            class="bi bi-person" viewBox="0 0 16 16">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+          </svg></a>
+      </div>
+    </div>
+  </header>
+  <section class="bigcontainer">
+    <div class="content">
+      <div class="toppart">
+        <h3 class="filtername">Filters</h3>
+        <div class="sort">
+          
+          <form action="">
+            <select class="filters" name="" id="">
+              <option value="">Sort by</option>
+              <option value="">Price</option>
+              <option value="">Relevance</option>
+              <option value="">Discounts</option>
+              <option value="">Name</option>
+            </select>
+            <select class="filters" name="" id="">
+              <option value="">Reviews</option>
+              <option value="">Location</option>
+              <option value="">Name</option>
+              <option value="">Views</option>
+            </select>
+            <select class="filters phone" name="" id="">
+              <option value="">Price</option>
+              <option value="">10.000 Euro</option>
+              <option value="">25.000 Euro</option>
+              <option value="">50.000 Euro</option>
+              <option value="">75.000 Euro</option>
+              <option value="">More</option>
+            </select>
+            <select class="filters phone" name="" id="">
+              <option value="">Rooms</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">More</option>
+            </select>
+            <select class="filters phone" name="" id="">
+              <option value="">Surface</option>
+              <option value="">25m<sup>2</sup></option>
+              <option value="">40m<sup>2</sup></option>
+              <option value="">60m<sup>2</sup></option>
+              <option value="">80m<sup>2</sup></option>
+              <option value="">More</option>
+            </select>
+            <select class="filters phone" name="" id="">
+              <option value="">Level</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">More</option>
+            </select>
+            <select class="filters phone" name="" id="">
+              <option value="">Furnitured</option>
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+
+          </form>
+          
+        </div>
+
+      </div>
+      <hr class="hrlinie">
+      <section class="allcontent">
+        <div class="morefilterslist">
+
+          <form class="belengheru" action="">
+            <hr class="linielista">
+            <h3 class="subtitlefilter">Price</h3>
+
+            <ul>
+
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">10.000 Euro
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">25.000 Euro
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">50.000 Euro
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">75.000 Euro
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">10.000 Euro
+
+              </li>
+            </ul>
+            <hr class="linielista">
+            <h3 class="subtitlefilter">Rooms</h3>
+
+            <ul>
+
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">1
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">2
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">3
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">More
+
+              </li>
+            </ul>
+            <hr class="linielista">
+            <h3 class="subtitlefilter">Surface</h3>
+
+            <ul>
+
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">25m<sup>2</sup>
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">40m<sup>2</sup>
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">60m<sup>2</sup>
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">80m<sup>2</sup>
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">More<sup>2</sup>
+
+              </li>
+            </ul>
+            <hr class="linielista">
+            <h3 class="subtitlefilter">Level</h3>
+
+            <ul>
+
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px;" id="">1
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">2
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">3
+
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">4
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">5
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">6
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">7
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">8
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">9
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">10
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">More
+
+              </li>
+            </ul>
+            <hr class="linielista">
+            <h3 class="subtitlefilter">Furnitured</h3>
+
+            <ul>
+
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">Yes
+
+              </li>
+              <li>
+                <input type="radio" name="price" style="margin-right: 2px; " id="">No
+
+              </li>
+
+            </ul>
+
+          </form>
+
+          <hr class="linielista">
+        </div>
+        <section class="productsbox">
+
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="productcard">
+            <a class="productlink" href="product.html">
+              <div class="productimg">
+                <img src="./img/pexels-yura-forrat-10161225.jpg" alt="" />
+              </div>
+              <div class="productdescription">
+                <div class="producttitle">
+                  <h3>Apartament 2 Camere Zona Ploiesti Vest</h3>
+                </div>
+                <div class="placeprice">
+                  <div class="place">
+                    <img src="./img/room_black_24dp.svg" alt="">
+                    <h3>Ploiesti</h3>
+                  </div>
+                  <div class="price">100.000 Euro</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </section><br>
+      <div class="pages"><a href=""><button class="pagebutton">1</button></a>
+        <a href=""><button class="pagebutton">2</button></a>
+        <a href=""><button class="pagebutton">3</button></a>
+        <a href=""><button class="pagebutton"><img src="./img/chevron_right_black_24dp.svg" alt=""></button></a>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <h3 class="footertitle">Imobuy SRL</h3>
+
+    <div class="footerlinks">
+      <div class="footerlist">
+        <ul class="list">
+          <h3 class="listtitle">Socials</h3>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Telegram</li>
+        </ul>
+        <ul class="list">
+          <h3 class="listtitle">About</h3>
+          <li>Creators</li>
+          <li>Help</li>
+          <li>Email</li>
+          <li></li>
+        </ul>
+        <ul class="list">
+          <h4 class="listtitle">Contact</h4>
+          <li>Phone</li>
+          <li>Ticket</li>
+          <li>Contact Email</li>
+        </ul>
+        <ul class="list end">
+          <h4 class="listtitle">Sponsors</h4>
+          <li>Tesla</li>
+          <li>Kaufland</li>
+          <li>Logitech</li>
+          <li>Genesis</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

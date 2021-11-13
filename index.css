@@ -66,6 +66,7 @@ a, a:visited, a:hover, a:active {
   background: url(./img/pexels-aleksejs-bergmanis-681368.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 94vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,6 +167,10 @@ a, a:visited, a:hover, a:active {
   transition: all 0.3s;
   -webkit-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.linksumbit {
+  padding: 0;
 }
 
 .container2 {
