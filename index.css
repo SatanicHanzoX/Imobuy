@@ -256,7 +256,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .footertitle {
-  font-size: var(--h-font);
+  font-size: var(--h3-font);
   color: white;
   text-align: center;
   padding: 40px;
