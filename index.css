@@ -144,7 +144,7 @@ a, a:visited, a:hover, a:active {
   max-width: 200px;
   padding-left: 10px;
   font-size: clamp(1rem, 1vw, 1.5rem);
-  margin-top: 3%;
+margin-top: 3%;
 }
 
 .subtitle {
@@ -238,6 +238,7 @@ a, a:visited, a:hover, a:active {
   border-radius: 5px;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
+  user-select: none;
 }
 
 .card:hover {
@@ -350,6 +351,12 @@ a, a:visited, a:hover, a:active {
             align-items: center;
   }
   
+}
+
+@media screen and (max-width: 650px) {
+  .dropdowns {
+    margin-right: 5px;
+  }
 }
 
 @media screen and (min-width: 650px) {

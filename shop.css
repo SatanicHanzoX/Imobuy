@@ -230,6 +230,10 @@ a:visited {
   transition: ease-in 0.4s;
   border-radius: 2px;
   text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .productcard:hover {
