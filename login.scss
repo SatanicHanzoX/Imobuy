@@ -1,0 +1,314 @@
+:root {
+  --h1-font: clamp(2rem, 3vw, 3rem);
+  --h2-font: clamp(1rem, 1.5vw, 1.5rem);
+  --h3-font: clamp(0.85rem, 1vw, 1rem);
+  --h4-font: clamp(0.5rem, 0.7vw, 1rem);
+  --h5-font: clamp(0.3rem, 0.5vw, 0.7rem);
+  --p-font: clamp(1.1rem, 1.5vw, 1.2rem);
+  --font: Lato, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  list-style: none;
+}
+
+html {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  color: inherit;
+}
+
+.headerbox {
+  background: #fb0;
+  padding: 10px 0;
+  max-height: 60px;
+}
+
+.headercontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 9.6%;
+  max-height: 60px;
+}
+
+.imgdiv {
+  max-width: 12vh;
+  min-width: 100px;
+}
+
+.imgdiv img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.loginsvg {
+  -webkit-transition: ease-in 0.35s;
+  transition: ease-in 0.35s;
+}
+
+.loginsvg:hover {
+  scale: 1.1;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #0f0f0f;
+  padding: 20px;
+}
+
+.footertitle {
+  font-size: 26px;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.footerlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footerlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  width: 80vw;
+}
+
+.list {
+  color: #fff;
+  list-style: none;
+  line-height: 25px;
+  width: 150px;
+}
+
+.end {
+  text-align: end;
+}
+
+.listtitle {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .footerlinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.bigcontainer {
+  background: url(img/pexels-aleksejs-bergmanis-681368.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.loginwith {
+  margin-top: 15%;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  border: 0;
+  background: rgb(240, 240, 240);
+  border-bottom: 3px solid #fb0;
+}
+
+.email {
+  display: flex;
+  margin-top: 5px;
+}
+
+.emailbox {
+  height: 45px;
+  width: 100%;
+  border: 0;
+  background: rgb(240, 240, 240);
+  font-size: 15px;
+  border-bottom: 3px solid #fb0;
+}
+
+.emailbox:focus {
+  outline: none;
+}
+
+.email:focus-within {
+  outline: 3px solid #fb0;
+  box-shadow: -1px 1px 7px 7px rgba(0, 0, 0, 0.1);
+
+  .icon {
+    border: 0;
+  }
+
+  .emailbox {
+    border: 0;
+  }
+}
+
+.facebook {
+  background-color: #0c85f7;
+}
+
+.google {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(255, 0, 0);
+}
+
+.apple {
+  background: black;
+}
+.button {
+  width: 100px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  transition: ease-in 0.2s;
+}
+
+.button:hover {
+  scale: 1.05;
+  box-shadow: -1px 1px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.buttonlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5%;
+}
+
+.sumbitbutton {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: #fb0;
+  border-radius: 3px;
+  transition: ease-in 0.5s;
+  margin-top: 5%;
+  font-family: var(--font);
+  font-size: var(--h3-font);
+}
+
+.sumbitbutton:hover {
+  scale: 1.05;
+  box-shadow: -1px 1px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.logincontainer {
+  background-color: #f8f8f8;
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+  box-shadow: -1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.title {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  width: 100%;
+}
+
+.login {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginwith {
+  margin: 10px 0;
+}
+
+.register {
+  font-size: var(--h3-font);
+  font-family: var(--font);
+}
+
+@media screen and (min-width: 700px) {
+  .logincontainer {
+    width: fit-content;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button {
+    margin-top: 10px;
+  }
+
+  .logincontainer {
+    width: fit-content;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button {
+    width: 75px;
+  }
+}

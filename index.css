@@ -28,6 +28,7 @@ a, a:visited, a:hover, a:active {
 .headerbox {
   background: #ffbb00;
   padding: 10px 0;
+  max-height: 60px;
 }
 
 .headercontent {
@@ -41,10 +42,11 @@ a, a:visited, a:hover, a:active {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 9.6%;
+  max-height: 60px;
 }
 
 .imgdiv {
-  max-width: 6vw;
+  max-width: 12vh;
   min-width: 100px;
 }
 
