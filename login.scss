@@ -71,9 +71,10 @@ a:visited {
 
 .footer {
   width: 100%;
-  height: 40vh;
+  height: fit-content;
   background-color: #0f0f0f;
   padding: 20px;
+  padding-bottom: 30px;
 }
 
 .footertitle {
